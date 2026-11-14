@@ -1,6 +1,6 @@
 # Media not shown on the site. Nothing here is deleted.
-# Use scripts/curate.py (or edit projects.yaml) to put one back.
-# Last written by scripts/curate.py on 2026-11-14 17:01.
+# `suggested` is the project the file sits in (greyed out) inside scripts/curate.py.
+# Last written by scripts/curate.py on 2026-11-14 17:37.
 
 unassigned:
   - id: 58622f9b395f
@@ -51,12 +51,6 @@ unassigned:
     kind: photo
     suggested: null
     reason: "workshop / tools, not a piece — candidate for the About page"
-  - id: 8d55704a917c
-    file: "ChessBoard2(1).jpeg"
-    date: 2021-04-06
-    kind: photo
-    suggested: project-13
-    reason: "shows a person — decide whether it belongs on a public site"
   - id: 281b1b3a45c7
     file: "BookShelf.jpeg"
     date: 2021-04-06
@@ -68,6 +62,7 @@ unassigned:
     date: 2021-04-06
     kind: photo
     suggested: project-12
+    caption: "India Map"
     reason: "shows a person — decide whether it belongs on a public site"
   - id: 8e3b9f5410ee
     file: "TexasDhruv.jpeg"
@@ -123,29 +118,11 @@ unassigned:
     kind: photo
     suggested: null
     reason: "shows a person — decide whether it belongs on a public site"
-  - id: 0d69f39d30d1
-    file: "D6BD8AF1-64BA-4D48-8C16-98FF5CD35748.JPG"
-    date: 2021-05-05
-    kind: photo
-    suggested: project-26
-    reason: "hidden in the curation app"
-  - id: 496b13127cf0
-    file: "13D87F34-3EF3-410E-A6B8-786C00D1DA1B.MP4"
-    date: 2021-05-05
-    kind: video
-    suggested: project-26
-    reason: "hidden in the curation app"
   - id: 6192119f9713
     file: "EDCA222A-6498-4F3A-B0FA-CCDDB9806FF5.MP4"
     date: 2021-09-17
     kind: video
     suggested: project-31
-    reason: "shows a person — decide whether it belongs on a public site"
-  - id: 1e79d163ef31
-    file: "2ED1FC71-6B41-4F29-AF6E-B4FFA9EB7D29.JPG"
-    date: 2021-10-03
-    kind: photo
-    suggested: null
     reason: "shows a person — decide whether it belongs on a public site"
   - id: 730a0a1db2ad
     file: "BedAkshi1.JPG"

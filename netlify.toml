@@ -1,0 +1,16 @@
+# Netlify: drag the dist/ folder onto app.netlify.com, or connect this repo.
+# No build step — dist/ is committed.
+
+[build]
+  publish = "dist"
+  command = ""
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

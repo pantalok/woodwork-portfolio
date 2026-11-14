@@ -3,7 +3,7 @@
 
 Writes data/clusters_preview.html (git-ignored). Open it in a browser:
     open data/clusters_preview.html
-It links thumbnails from dist/media/, so run scripts/process.py first.
+It links thumbnails from media/derived/, so run scripts/process.py first.
 """
 from __future__ import annotations
 
@@ -45,7 +45,7 @@ def main() -> int:
         if not f or not d:
             return f'<div class="item" style="color:#c00">missing: {html.escape(fid)}</div>'
         cls = "v" if f["kind"] == "video" else ""
-        src = f"../dist/media/{d['thumb']['jpg']}"
+        src = f"../media/derived/{d['thumb']['jpg']}"
         return (f'<div class="item"><div class="{cls}"><img class="{"cover" if cover else ""}" src="{src}" '
                 f'loading="lazy" alt=""></div><div class="n">{html.escape(f["path"])}<br>'
                 f'{f["date"][:10]} <code>{f["date_source"]}</code><br><code>{fid}</code></div></div>')

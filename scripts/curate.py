@@ -31,7 +31,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-MEDIA = ROOT / "dist" / "media"
+MEDIA = ROOT / "media" / "derived"
 PORT = 8765
 
 TEXT_FIELDS = ("summary", "wood", "finish", "dimensions", "build_notes")

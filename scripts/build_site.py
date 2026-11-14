@@ -7,7 +7,8 @@ Reads:  data/site.yaml, data/projects.yaml, data/inventory.json, data/derivative
         site/static/  (css, js, fonts)
 Writes: dist/index.html, dist/gallery.html, dist/about.html, dist/projects/<slug>.html,
         dist/css/, dist/js/, dist/fonts/
-Media derivatives in dist/media/ come from scripts/process.py and are left alone.
+dist/media/ receives copies of only the derivatives that published projects use
+(from media/derived/, produced by scripts/process.py); everything else is removed.
 
 All links are relative, so the output works from file://, a local server, or any host.
 """
@@ -26,6 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 STATIC = ROOT / "site" / "static"
 DIST = ROOT / "dist"
+DERIVED = ROOT / "media" / "derived"
 
 
 # --------------------------------------------------------------------------- tiny markdown
@@ -333,8 +335,41 @@ def main() -> int:
         if stale.name not in written:
             stale.unlink()
 
+    # media: copy exactly the derivatives the published pages reference, drop the rest
+    used: set[str] = set()
+    for p in live:
+        used.update(m["id"] for m in p["media"])
+        used.add(p["cover"])
+    for key in ("hero", "about_image"):
+        if site.cfg.get(key) in site.der:
+            used.add(site.cfg[key])
+    media_dir = DIST / "media"
+    media_dir.mkdir(exist_ok=True)
+    wanted: set[str] = set()
+    for fid in used:
+        d = site.der[fid]
+        names = [d["thumb"]["webp"], d["thumb"]["jpg"], d["display"]["webp"], d["display"]["jpg"]]
+        if d["kind"] == "video":
+            names.append(d["video"]["mp4"])
+        for name in names:
+            wanted.add(name)
+            src, dst = DERIVED / name, media_dir / name
+            if not src.exists():
+                site.problems.append(f"missing derivative {name} — run scripts/process.py")
+                continue
+            if not dst.exists() or dst.stat().st_mtime < src.stat().st_mtime or dst.stat().st_size != src.stat().st_size:
+                shutil.copy2(src, dst)
+    removed = 0
+    for f in media_dir.iterdir():
+        if f.name not in wanted:
+            f.unlink()
+            removed += 1
+    (DIST / ".nojekyll").write_text("")
+
     n_media = sum(len(p["media"]) for p in live)
+    media_bytes = sum(f.stat().st_size for f in media_dir.iterdir())
     print(f"  Built {len(live)} project pages, index, gallery ({n_media} items), about → dist/")
+    print(f"  dist/media: {len(wanted)} files, {media_bytes / 1048576:.0f} MB  (removed {removed} unused)")
     for w in site.problems:
         print(f"  note: {w}")
     print("  View locally:  cd dist && python3 -m http.server 8000   →  http://localhost:8000/")

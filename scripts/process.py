@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Phase 2 — generate web derivatives into dist/media/ from data/inventory.json.
+"""Phase 2 — generate web derivatives into media/derived/ from data/inventory.json.
+
+build_site.py copies only the derivatives that projects actually use into dist/media/,
+so hidden files never reach the published site.
 
 Per photo:
     <id>-thumb.webp / .jpg     640px long edge
@@ -40,7 +43,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "media" / "original"
 INVENTORY = ROOT / "data" / "inventory.json"
 MANIFEST = ROOT / "data" / "derivatives.json"
-OUT = ROOT / "dist" / "media"
+OUT = ROOT / "media" / "derived"   # private cache of every derivative; build_site.py copies the used ones to dist/media
 
 SIZES = {"thumb": 640, "display": 1800}
 WEBP_Q = {"thumb": 78, "display": 80}
@@ -323,7 +326,7 @@ def main() -> int:
     # Report
     img_bytes = sum(p.stat().st_size for p in OUT.glob("*-*.*"))
     vid_bytes = sum(p.stat().st_size for p in OUT.glob("*.mp4"))
-    total = dir_size(ROOT / "dist")
+    total = dir_size(OUT)
     modes = {}
     for m in manifest.values():
         if m["kind"] == "video":
@@ -338,9 +341,9 @@ def main() -> int:
     print(f"  Images + posters : {human(img_bytes)}")
     print(f"  Web videos       : {human(vid_bytes)}")
     print(f"  Pruned stale     : {pruned}")
-    print(f"  dist/ total      : {human(total)}")
+    print(f"  media/derived    : {human(total)}  (dist/media gets only the files projects use)")
     if total > WARN_BYTES:
-        print(f"  !! WARNING: dist/ exceeds 1 GB ({human(total)})")
+        print(f"  !! WARNING: derivatives exceed 1 GB ({human(total)})")
     for path, why in failures:
         print(f"  FAILED {path}: {why}")
     print(f"  Wrote {MANIFEST.relative_to(ROOT)}")

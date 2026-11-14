@@ -1,7 +1,7 @@
 # Project curation. Order here is display order.
-# Fill in title, summary, wood, finish, dimensions, build_notes (markdown ok) and captions.
+# Edit with scripts/curate.py or by hand. build_notes accepts simple markdown.
 # A media item is {id, caption}. Comments show the original filename and capture date.
-# Last written by scripts/curate.py on 2026-11-14 17:01.
+# Last written by scripts/curate.py on 2026-11-14 17:37.
 
 projects:
 
@@ -16,7 +16,7 @@ projects:
     cover: faa392850493   # ED820F37-E5FF-4193-B6CB-D5F00339A933.JPG
     media:
       - id: faa392850493   # ED820F37-E5FF-4193-B6CB-D5F00339A933.JPG  2024-07-03  photo
-        caption: ""
+        caption: "Folding Coffee Table"
 
   - slug: project-37
     title: "Project 37 — April 2023"
@@ -26,16 +26,14 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 733a074dd80e   # IMG_7709.HEIC
+    cover: 00f9c74d6af9   # 99F64133-EC84-4D5C-9751-261C1A702D45.JPG
     media:
-      - id: 733a074dd80e   # IMG_7709.HEIC  2023-04-02  photo
-        caption: ""
       - id: 00f9c74d6af9   # 99F64133-EC84-4D5C-9751-261C1A702D45.JPG  2023-04-04  photo
-        caption: ""
+        caption: "Planter"
       - id: 2ac7b579e8b1   # IMG_7710.HEIC  2023-04-04  photo
-        caption: ""
+        caption: "Plamter"
       - id: 8aa6e7f83922   # 1F8BEF8D-83E3-4961-9864-B5BC57FEDA75.MP4  2023-04-04  video
-        caption: ""
+        caption: "Planter"
 
   - slug: project-36
     title: "Project 36 — August 2022"
@@ -48,7 +46,7 @@ projects:
     cover: 8bded75d36ad   # BedAkshi2.JPG
     media:
       - id: 8bded75d36ad   # BedAkshi2.JPG  2022-08-07  photo
-        caption: ""
+        caption: "Simple Bed"
       - id: 1b54bc9a010e   # BedAkshi.JPG  2022-08-07  photo
         caption: ""
 
@@ -63,6 +61,10 @@ projects:
     cover: 9ba02af0a585   # A4B2EB5F-1B7A-4DE1-8484-316F9E0FE994.MP4
     media:
       - id: 9ba02af0a585   # A4B2EB5F-1B7A-4DE1-8484-316F9E0FE994.MP4  2022-06-25  video
+        caption: "Laptop stand"
+      - id: 08c7c6ff32ae   # 21EDA3BF-624B-41AE-A125-A4305CC90352.JPG  2022-06-17  photo
+        caption: ""
+      - id: 38fd936b7bc2   # 502F0BDD-4BE9-491B-8C64-E61C78C40D67.MP4  2022-06-17  video
         caption: ""
 
   - slug: project-34
@@ -73,16 +75,12 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 08c7c6ff32ae   # 21EDA3BF-624B-41AE-A125-A4305CC90352.JPG
+    cover: 9c2b41f3494f   # A877849B-1672-4ABA-9C73-15E29786B0C8.JPG
     media:
-      - id: 08c7c6ff32ae   # 21EDA3BF-624B-41AE-A125-A4305CC90352.JPG  2022-06-17  photo
-        caption: ""
       - id: 9c2b41f3494f   # A877849B-1672-4ABA-9C73-15E29786B0C8.JPG  2022-06-17  photo
-        caption: ""
+        caption: "Chair"
       - id: 96a30b0cd5b3   # 11360B59-C931-4B49-9E32-D812B2DF310C.MP4  2022-06-17  video
-        caption: ""
-      - id: 38fd936b7bc2   # 502F0BDD-4BE9-491B-8C64-E61C78C40D67.MP4  2022-06-17  video
-        caption: ""
+        caption: "Chair"
 
   - slug: project-33
     title: "Project 33 — January 2022"
@@ -96,10 +94,6 @@ projects:
     media:
       - id: 18671e04ac1a   # 04B4C420-3607-45C0-983E-320D14E87C66.JPG  2022-01-31  photo
         caption: ""
-      - id: b03515a2dba7   # 5F9006BF-6DF3-4561-B5A4-5376BAD0C49A.JPG  2022-01-31  photo
-        caption: ""
-      - id: f6af972397d7   # DD476DDD-4786-4572-9634-F07815C767F3.MP4  2022-01-31  video
-        caption: ""
 
   - slug: project-32
     title: "Project 32 — November 2021"
@@ -112,7 +106,7 @@ projects:
     cover: b22e820c24b2   # BEBE7A69-ED37-452C-A195-4EAC7E82BFD4.JPG
     media:
       - id: b22e820c24b2   # BEBE7A69-ED37-452C-A195-4EAC7E82BFD4.JPG  2021-11-09  photo
-        caption: ""
+        caption: "book reader"
       - id: b3609d326a33   # 2B7A0FE1-C525-4884-AFC8-256C4E6EFD9A.MP4  2021-11-09  video
         caption: ""
       - id: 6d341d2034f2   # A1DACBDF-C0A2-425A-B332-526FFFC1AE14.MP4  2021-11-09  video
@@ -129,7 +123,7 @@ projects:
     cover: afddd39eda6a   # StudyTableForDhru.JPG
     media:
       - id: afddd39eda6a   # StudyTableForDhru.JPG  2021-09-19  photo
-        caption: ""
+        caption: "Study Table"
 
   - slug: project-30
     title: "Project 30 — September 2021"
@@ -142,7 +136,7 @@ projects:
     cover: a2b6acc2713a   # F885EF6E-0906-4D71-9519-DC317D4627D7.MP4
     media:
       - id: a2b6acc2713a   # F885EF6E-0906-4D71-9519-DC317D4627D7.MP4  2021-09-14  video
-        caption: ""
+        caption: "Cake stand"
 
   - slug: project-29
     title: "Project 29 — June 2021"
@@ -156,6 +150,14 @@ projects:
     media:
       - id: 88b62f6ff0d3   # E7424CA9-8634-43F9-AD56-5149594CF3B9.JPG  2021-06-18  photo
         caption: ""
+      - id: 4cacd4c1f226   # DAEFCF81-5318-4668-BAC6-4731B3910649.JPG  2021-06-06  photo
+        caption: ""
+      - id: 837d78434244   # EFCEAC1A-D17E-4589-B066-5D71A0A214B3.JPG  2021-05-23  photo
+        caption: ""
+      - id: 8cb5280d2981   # DA9EB020-6E11-4752-83C1-80A017179940.JPG  2021-05-23  photo
+        caption: ""
+      - id: 4b6b7c0420eb   # NameSign1.jpeg  2021-05-04  photo
+        caption: ""
 
   - slug: project-28
     title: "Project 28 — June 2021"
@@ -165,10 +167,8 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 4cacd4c1f226   # DAEFCF81-5318-4668-BAC6-4731B3910649.JPG
-    media:
-      - id: 4cacd4c1f226   # DAEFCF81-5318-4668-BAC6-4731B3910649.JPG  2021-06-06  photo
-        caption: ""
+    cover: 
+    media: []
 
   - slug: project-27
     title: "Project 27 — May 2021"
@@ -178,13 +178,15 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 837d78434244   # EFCEAC1A-D17E-4589-B066-5D71A0A214B3.JPG
+    cover: 37cd8a65bc21   # WallClock.JPG
     media:
-      - id: 837d78434244   # EFCEAC1A-D17E-4589-B066-5D71A0A214B3.JPG  2021-05-23  photo
-        caption: ""
       - id: 8d156890b393   # 4E1D5964-1233-46C3-9BFE-5395F3B9876B.JPG  2021-05-23  photo
+        caption: "clock"
+      - id: e36c9ab3e361   # 65C99BD7-59E0-4A2C-B060-F0907B847E0B.MP4  2021-05-05  video
         caption: ""
-      - id: 8cb5280d2981   # DA9EB020-6E11-4752-83C1-80A017179940.JPG  2021-05-23  photo
+      - id: f0607f2bbf99   # DC7AE626-5291-4243-AAE8-0DD8CD9C5EE2.MP4  2021-05-05  video
+        caption: ""
+      - id: 37cd8a65bc21   # WallClock.JPG  2021-05-04  photo
         caption: ""
 
   - slug: project-26
@@ -195,11 +197,15 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: e36c9ab3e361   # 65C99BD7-59E0-4A2C-B060-F0907B847E0B.MP4
+    cover: 0d69f39d30d1   # D6BD8AF1-64BA-4D48-8C16-98FF5CD35748.JPG
     media:
-      - id: e36c9ab3e361   # 65C99BD7-59E0-4A2C-B060-F0907B847E0B.MP4  2021-05-05  video
+      - id: 0d69f39d30d1   # D6BD8AF1-64BA-4D48-8C16-98FF5CD35748.JPG  2021-05-05  photo
+        caption: "Puzzle"
+      - id: 496b13127cf0   # 13D87F34-3EF3-410E-A6B8-786C00D1DA1B.MP4  2021-05-05  video
+        caption: "Puzzle"
+      - id: b03515a2dba7   # 5F9006BF-6DF3-4561-B5A4-5376BAD0C49A.JPG  2022-01-31  photo
         caption: ""
-      - id: f0607f2bbf99   # DC7AE626-5291-4243-AAE8-0DD8CD9C5EE2.MP4  2021-05-05  video
+      - id: f6af972397d7   # DD476DDD-4786-4572-9634-F07815C767F3.MP4  2022-01-31  video
         caption: ""
 
   - slug: project-25
@@ -210,10 +216,8 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 4b6b7c0420eb   # NameSign1.jpeg
-    media:
-      - id: 4b6b7c0420eb   # NameSign1.jpeg  2021-05-04  photo
-        caption: ""
+    cover: 
+    media: []
 
   - slug: project-24
     title: "Project 24 — May 2021"
@@ -226,7 +230,7 @@ projects:
     cover: 77d43b3caa2e   # Frame.jpeg
     media:
       - id: 77d43b3caa2e   # Frame.jpeg  2021-05-04  photo
-        caption: ""
+        caption: "Frame"
 
   - slug: project-23
     title: "Project 23 — May 2021"
@@ -239,7 +243,7 @@ projects:
     cover: 8158c9c48727   # Drawer.jpeg
     media:
       - id: 8158c9c48727   # Drawer.jpeg  2021-05-04  photo
-        caption: ""
+        caption: "Tool Drawer"
 
   - slug: project-22
     title: "Project 22 — May 2021"
@@ -252,7 +256,7 @@ projects:
     cover: dbfea72ae5dd   # Stool.jpeg
     media:
       - id: dbfea72ae5dd   # Stool.jpeg  2021-05-04  photo
-        caption: ""
+        caption: "Stool"
 
   - slug: project-21
     title: "Project 21 — May 2021"
@@ -262,10 +266,8 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 37cd8a65bc21   # WallClock.JPG
-    media:
-      - id: 37cd8a65bc21   # WallClock.JPG  2021-05-04  photo
-        caption: ""
+    cover: 
+    media: []
 
   - slug: project-20
     title: "Project 20 — May 2021"
@@ -278,7 +280,7 @@ projects:
     cover: a1640ee2ee21   # winetray.JPG
     media:
       - id: a1640ee2ee21   # winetray.JPG  2021-05-04  photo
-        caption: ""
+        caption: "Wine stand"
 
   - slug: project-19
     title: "Project 19 — April 2021"
@@ -291,7 +293,7 @@ projects:
     cover: bf3962584746   # Nightstand.MP4
     media:
       - id: bf3962584746   # Nightstand.MP4  2021-04-28  video
-        caption: ""
+        caption: "Night stand"
 
   - slug: project-18
     title: "Project 18 — April 2021"
@@ -304,9 +306,9 @@ projects:
     cover: 42fda41bb78c   # Caddy1.JPG
     media:
       - id: c6fc0ff7d35e   # Caddy.MP4  2021-04-20  video
-        caption: ""
+        caption: "Toolbox"
       - id: 42fda41bb78c   # Caddy1.JPG  2021-05-04  photo
-        caption: ""
+        caption: "Toolbox"
 
   - slug: project-17
     title: "Project 17 — April 2021"
@@ -334,7 +336,9 @@ projects:
     cover: 74f8d1cf105f   # Texas.jpeg
     media:
       - id: 74f8d1cf105f   # Texas.jpeg  2021-04-06  photo
-        caption: ""
+        caption: "Texas"
+      - id: 7ddbf4ba94a8   # India Map.jpeg  2021-04-06  photo
+        caption: "Decorative"
 
   - slug: project-15
     title: "Project 15 — April 2021"
@@ -347,7 +351,7 @@ projects:
     cover: 8aa0144c322b   # Pencil.jpeg
     media:
       - id: 8aa0144c322b   # Pencil.jpeg  2021-04-06  photo
-        caption: ""
+        caption: "Pencil stand"
       - id: c07b1fb34946   # PencilStand2.jpeg  2021-04-06  photo
         caption: ""
 
@@ -362,7 +366,7 @@ projects:
     cover: 4129d891f1a6   # BookShelf.JPG
     media:
       - id: 4129d891f1a6   # BookShelf.JPG  2021-05-04  photo
-        caption: ""
+        caption: "Book shelf"
 
   - slug: project-13
     title: "Project 13 — April 2021"
@@ -375,10 +379,12 @@ projects:
     cover: 8bbf0589d16d   # ChessBoard1.jpeg
     media:
       - id: 8bbf0589d16d   # ChessBoard1.jpeg  2021-04-06  photo
-        caption: ""
+        caption: "Chess Board"
       - id: 5a45ea02268c   # ChessBordVerticle.jpeg  2021-04-06  photo
         caption: ""
       - id: d26363fe1b08   # ChessBoard2.jpeg  2021-04-06  photo
+        caption: ""
+      - id: 8d55704a917c   # ChessBoard2(1).jpeg  2021-04-06  photo
         caption: ""
 
   - slug: project-12
@@ -389,10 +395,8 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 7ddbf4ba94a8   # India Map.jpeg
-    media:
-      - id: 7ddbf4ba94a8   # India Map.jpeg  2021-04-06  photo
-        caption: ""
+    cover: 
+    media: []
 
   - slug: project-11
     title: "Project 11 — February 2021"
@@ -420,7 +424,7 @@ projects:
     cover: c2bafa4f1e0b   # MonitorStand3.jpg
     media:
       - id: c2bafa4f1e0b   # MonitorStand3.jpg  2021-01-17  photo
-        caption: ""
+        caption: "Monitor Stand"
       - id: 7338e85cd707   # MonitorStand2.MOV  2021-01-17  video
         caption: ""
       - id: 526f4a410c83   # MonitorStand1.jpg  2021-01-17  photo
@@ -489,6 +493,8 @@ projects:
         caption: ""
       - id: be24c14fab53   # GardenBench.jpg  2021-01-04  photo
         caption: ""
+      - id: 4fbe096644aa   # GardenTable4.jpg  2020-12-13  photo
+        caption: ""
 
   - slug: project-05
     title: "Project 5 — December 2020"
@@ -501,7 +507,7 @@ projects:
     cover: ff16a2312f96   # BarStool2.MOV
     media:
       - id: ff16a2312f96   # BarStool2.MOV  2020-12-19  video
-        caption: ""
+        caption: "Table"
       - id: 3ee98453806c   # BarStool.MOV  2020-12-19  video
         caption: ""
 
@@ -513,14 +519,14 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 1135cd594706   # SideTable2.jpg
+    cover: a4ca4959bd37   # SideTable.jpg
     media:
       - id: fef84cce47fd   # SideTable3.MOV  2020-12-19  video
         caption: ""
       - id: 1135cd594706   # SideTable2.jpg  2020-12-19  photo
         caption: ""
       - id: a4ca4959bd37   # SideTable.jpg  2020-12-20  photo
-        caption: ""
+        caption: "Coffee Table"
 
   - slug: project-03
     title: "Project 3 — December 2020"
@@ -535,7 +541,7 @@ projects:
       - id: 1af187b3bdad   # PlainBench4.jpg  2020-12-14  photo
         caption: ""
       - id: d7e283ae9a0f   # PlainBench.MOV  2020-12-14  video
-        caption: ""
+        caption: "Bench"
 
   - slug: project-02
     title: "Project 2 — December 2020"
@@ -545,9 +551,11 @@ projects:
     finish: ""
     dimensions: ""
     build_notes: ""
-    cover: 4fbe096644aa   # GardenTable4.jpg
+    cover: 733a074dd80e   # IMG_7709.HEIC
     media:
-      - id: 4fbe096644aa   # GardenTable4.jpg  2020-12-13  photo
+      - id: 733a074dd80e   # IMG_7709.HEIC  2023-04-02  photo
+        caption: "Shoe Rack"
+      - id: 1e79d163ef31   # 2ED1FC71-6B41-4F29-AF6E-B4FFA9EB7D29.JPG  2021-10-03  photo
         caption: ""
 
   - slug: project-01

@@ -1,18 +1,17 @@
-# Site-wide settings. Everything here is yours to edit.
+# Site-wide settings. Edit with scripts/curate.py or by hand.
+# Last written by scripts/curate.py on 2026-11-14 17:37.
 
-name: "Your Name"                     # shown in the header, the landing page and the footer
-tagline: "Handmade furniture and small objects, built one at a time."   # one line under the name on the landing page
-site_url: ""                          # e.g. https://example.com — used for the canonical link and sharing cards; leave empty for now
+name: "Your Name"
+tagline: "Handmade furniture and small objects, built one at a time."
+site_url: ""
 
-# Landing page hero: a file id from data/inventory.json. Leave empty to use the first project's cover.
-hero: "4c8d061e11c8"            # GardenBench3.jpg — change to any id from data/inventory.json
+# Landing page hero: a file id from data/inventory.json. Empty = first project's cover.
+hero: "4c8d061e11c8"   # GardenBench3.jpg
 hero_alt: "A finished piece in the workshop"
 
-# About page. Markdown-ish: blank lines separate paragraphs; **bold**, *italic*, [links](url) and "- " lists work.
 about_title: "About"
-about: ""                             # leave empty to show placeholder text
-about_image: "64ce01e86e69"                        # file id, e.g. one of the workshop shots listed in data/unassigned.yaml
+about: ""
+about_image: "64ce01e86e69"   # Workshop.jpg
 about_image_caption: ""
 
-# Gallery page intro line (optional)
 gallery_intro: "Every photo and video, newest first."

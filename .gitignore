@@ -1,8 +1,8 @@
 # Raw photos/videos — large, backed up elsewhere. Never commit.
 media/original/
 
-# Generated output (built locally with scripts/build_site.py)
-dist/
+# Private derivative cache for every file (incl. hidden ones). dist/ IS tracked — it is the published site.
+media/derived/
 
 # Python
 .venv/
@@ -12,4 +12,5 @@ __pycache__/
 # Scratch
 data/clusters_preview.html
 .DS_Store
+*.swp
 data/scratch/
