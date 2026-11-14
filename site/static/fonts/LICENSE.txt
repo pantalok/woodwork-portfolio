@@ -1,0 +1,4 @@
+Fraunces (Undercase Type) and Source Sans 3 (Adobe) are both licensed under the
+SIL Open Font License 1.1. Latin-subset variable WOFF2 files downloaded from
+Google Fonts on 2026-11-14 for self-hosting.
+https://scripts.sil.org/OFL
