@@ -12,3 +12,4 @@ __pycache__/
 # Scratch
 data/clusters_preview.html
 .DS_Store
+data/scratch/
