@@ -1,0 +1,14 @@
+# Raw photos/videos — large, backed up elsewhere. Never commit.
+media/original/
+
+# Generated output (built locally with scripts/build_site.py)
+dist/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Scratch
+data/clusters_preview.html
+.DS_Store
