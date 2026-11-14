@@ -135,19 +135,19 @@
     if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
   }, { passive: true });
 
-  // ---------- Gallery year filter ----------
+  // ---------- Gallery category filter ----------
   var filters = document.querySelector(".filters");
   if (filters) {
     var tiles = Array.prototype.slice.call(document.querySelectorAll(".masonry .tile"));
     var empty = document.querySelector(".gallery-empty");
     filters.addEventListener("click", function (e) {
-      var btn = e.target.closest("button[data-year]");
+      var btn = e.target.closest("button[data-filter]");
       if (!btn) return;
       filters.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
-      var year = btn.dataset.year;
+      var key = btn.dataset.filter;
       var shown = 0;
       tiles.forEach(function (t) {
-        var show = year === "all" || t.dataset.year === year;
+        var show = key === "all" || t.dataset.filter === key;
         t.hidden = !show;
         if (show) shown++;
       });

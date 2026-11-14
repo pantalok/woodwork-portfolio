@@ -1,17 +1,22 @@
 # Site-wide settings. Edit with scripts/curate.py or by hand.
-# Last written by scripts/curate.py on 2026-11-14 17:37.
 
-name: "Your Name"
-tagline: "Handmade furniture and small objects, built one at a time."
+name: "Sawdust & Friends"
+tagline: "Weekend woodworking, made for friends and family."
 site_url: ""
 
 # Landing page hero: a file id from data/inventory.json. Empty = first project's cover.
 hero: "4c8d061e11c8"   # GardenBench3.jpg
-hero_alt: "A finished piece in the workshop"
+hero_alt: "A pine garden bench on a sunlit deck"
 
 about_title: "About"
-about: ""
-about_image: "64ce01e86e69"   # Workshop.jpg
-about_image_caption: ""
+about: |-
+  This is a hobby, not a business. Everything here was built in a garage on weekends and evenings, with ordinary tools, a lot of patience and a fair amount of trial and error.
 
-gallery_intro: "Every photo and video, newest first."
+  Most of my days are spent in front of a screen. The workshop is where I go to get away from it. Measuring twice, cutting once, sanding until the grain comes up, waiting for a finish to cure: it all forces me to slow down and pay attention to one thing at a time. It is the closest thing I have found to meditation, and every project teaches me something the last one did not.
+
+  Almost every piece was made for someone I know. A bench for a garden, a board for long evenings of chess, a stand for a desk, a sign for a bedroom door. Making something useful with your hands for people you care about is a good reason to keep learning. Nothing here is for sale. If a piece gives you an idea for your own workshop, that is the best outcome I could ask for.
+about_image: "64ce01e86e69"   # Workshop.jpg
+about_image_caption: "The garage where all of this gets made."
+
+gallery_intro: "Everything in one place. Click any picture to see it large."
+footer: "Built on weekends, for friends and family. Nothing here is for sale."

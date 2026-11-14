@@ -153,7 +153,7 @@ def shell(site: Site, *, title: str, body: str, rel: str, current: str, descript
 <main>
 {body}
 </main>
-<footer class="site-footer"><div class="wrap"><span>{name}</span><span>Handmade, photographed in the workshop.</span></div></footer>
+<footer class="site-footer"><div class="wrap"><span>{name}</span><span>{html.escape(site.cfg.get("footer") or "")}</span></div></footer>
 <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
   <div class="stage"></div>
   <div class="bar"><div class="caption"></div><div class="count"></div></div>
@@ -184,7 +184,7 @@ def page_index(site: Site) -> str:
             continue
         cards += (f'<li class="project-card"><a href="{rel}projects/{p["slug"]}.html">'
                   f'<div class="frame">{site.picture(p["cover"], "thumb", rel, "", sizes="(min-width: 700px) 33vw, 100vw")}</div>'
-                  f'<h2>{html.escape(p["title"])}</h2><div class="year">{p.get("year", "")}</div></a></li>')
+                  f'<h2>{html.escape(p["title"])}</h2></a></li>')
     body = f"""{hero}
 <section class="intro wrap">
   <h1>{html.escape(site.name)}</h1>
@@ -235,7 +235,7 @@ def page_project(site: Site, p: dict, prev: dict | None, nxt: dict | None) -> st
     body = f"""<article class="wrap">
   <header class="project-head">
     <h1>{html.escape(p["title"])}</h1>
-    <div class="year">{p.get("year", "")}</div>
+    {f'<div class="category">{html.escape(p["category"])}</div>' if p.get("category") else ''}
     {summary}
   </header>
   <div class="project-body">
@@ -251,7 +251,7 @@ def page_project(site: Site, p: dict, prev: dict | None, nxt: dict | None) -> st
 
 def page_gallery(site: Site) -> str:
     rel = ""
-    tiles, years = "", set()
+    tiles, cats = "", []
     items = []
     for p in site.projects:
         for m in p["media"]:
@@ -259,23 +259,25 @@ def page_gallery(site: Site) -> str:
     items.sort(key=lambda t: t[0], reverse=True)
     for date, p, m in items:
         d = site.der[m["id"]]
-        year = str(p.get("year") or date[:4])
-        years.add(year)
+        cat = (p.get("category") or "").strip()
+        if cat and cat not in cats:
+            cats.append(cat)
         cap = m["caption"]
         href = f"{rel}projects/{p['slug']}.html"
         play = '<span class="play" aria-hidden="true">&#9654;</span>' if m["kind"] == "video" else ""
         label = cap or p["title"]
-        tiles += (f'<div class="tile" data-year="{year}"><button type="button" {site.lb_attrs(m["id"], rel, "gallery", cap, href, p["title"])} '
+        tiles += (f'<div class="tile" data-filter="{html.escape(cat)}"><button type="button" {site.lb_attrs(m["id"], rel, "gallery", cap, href, p["title"])} '
                   f'aria-label="{html.escape(label)}">{site.picture(m["id"], "thumb", rel, "", sizes="(min-width: 900px) 33vw, (min-width: 520px) 50vw, 100vw")}{play}</button></div>')
-    chips = '<li><button type="button" data-year="all" aria-pressed="true">All</button></li>'
-    for y in sorted(years, reverse=True):
-        chips += f'<li><button type="button" data-year="{y}" aria-pressed="false">{y}</button></li>'
+    chips = '<li><button type="button" data-filter="all" aria-pressed="true">All</button></li>'
+    for c in cats:
+        chips += f'<li><button type="button" data-filter="{html.escape(c)}" aria-pressed="false">{html.escape(c)}</button></li>'
     intro = site.cfg.get("gallery_intro") or ""
+    filters = f'<ul class="filters" aria-label="Filter by category">{chips}</ul>' if cats else ""
     body = f"""<section class="wrap">
   <header class="page-head"><h1>Gallery</h1>{f'<p>{html.escape(intro)}</p>' if intro else ''}</header>
-  <ul class="filters" aria-label="Filter by year">{chips}</ul>
+  {filters}
   <div class="masonry">{tiles}</div>
-  <p class="gallery-empty" hidden>Nothing from that year yet.</p>
+  <p class="gallery-empty" hidden>Nothing in that category yet.</p>
 </section>"""
     return shell(site, title="Gallery", body=body, rel=rel, current="gallery")
 

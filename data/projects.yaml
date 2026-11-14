@@ -6,7 +6,8 @@
 projects:
 
   - slug: project-38
-    title: "Project 38 — July 2024"
+    category: "Furniture"
+    title: "Project 38"
     year: 2024
     summary: ""
     wood: ""
@@ -19,7 +20,8 @@ projects:
         caption: "Folding Coffee Table"
 
   - slug: project-37
-    title: "Project 37 — April 2023"
+    category: "Outdoor"
+    title: "Project 37"
     year: 2023
     summary: ""
     wood: ""
@@ -36,7 +38,8 @@ projects:
         caption: "Planter"
 
   - slug: project-36
-    title: "Project 36 — August 2022"
+    category: "Furniture"
+    title: "Project 36"
     year: 2022
     summary: ""
     wood: ""
@@ -51,7 +54,8 @@ projects:
         caption: ""
 
   - slug: project-35
-    title: "Project 35 — June 2022"
+    category: "Small pieces"
+    title: "Project 35"
     year: 2022
     summary: ""
     wood: ""
@@ -68,7 +72,8 @@ projects:
         caption: ""
 
   - slug: project-34
-    title: "Project 34 — June 2022"
+    category: "Outdoor"
+    title: "Project 34"
     year: 2022
     summary: ""
     wood: ""
@@ -83,7 +88,8 @@ projects:
         caption: "Chair"
 
   - slug: project-33
-    title: "Project 33 — January 2022"
+    category: "Furniture"
+    title: "Project 33"
     year: 2022
     summary: ""
     wood: ""
@@ -96,7 +102,8 @@ projects:
         caption: ""
 
   - slug: project-32
-    title: "Project 32 — November 2021"
+    category: "Small pieces"
+    title: "Project 32"
     year: 2021
     summary: ""
     wood: ""
@@ -113,7 +120,8 @@ projects:
         caption: ""
 
   - slug: project-31
-    title: "Project 31 — September 2021"
+    category: "Furniture"
+    title: "Project 31"
     year: 2021
     summary: ""
     wood: ""
@@ -126,7 +134,8 @@ projects:
         caption: "Study Table"
 
   - slug: project-30
-    title: "Project 30 — September 2021"
+    category: "Small pieces"
+    title: "Project 30"
     year: 2021
     summary: ""
     wood: ""
@@ -139,7 +148,8 @@ projects:
         caption: "Cake stand"
 
   - slug: project-29
-    title: "Project 29 — June 2021"
+    category: "Decor & gifts"
+    title: "Project 29"
     year: 2021
     summary: ""
     wood: ""
@@ -160,7 +170,8 @@ projects:
         caption: ""
 
   - slug: project-28
-    title: "Project 28 — June 2021"
+    category: ""
+    title: "Project 28"
     year: 2021
     summary: ""
     wood: ""
@@ -171,7 +182,8 @@ projects:
     media: []
 
   - slug: project-27
-    title: "Project 27 — May 2021"
+    category: "Decor & gifts"
+    title: "Project 27"
     year: 2021
     summary: ""
     wood: ""
@@ -190,7 +202,8 @@ projects:
         caption: ""
 
   - slug: project-26
-    title: "Project 26 — May 2021"
+    category: "Small pieces"
+    title: "Project 26"
     year: 2021
     summary: ""
     wood: ""
@@ -209,7 +222,8 @@ projects:
         caption: ""
 
   - slug: project-25
-    title: "Project 25 — May 2021"
+    category: ""
+    title: "Project 25"
     year: 2021
     summary: ""
     wood: ""
@@ -220,7 +234,8 @@ projects:
     media: []
 
   - slug: project-24
-    title: "Project 24 — May 2021"
+    category: "Decor & gifts"
+    title: "Project 24"
     year: 2021
     summary: ""
     wood: ""
@@ -233,7 +248,8 @@ projects:
         caption: "Frame"
 
   - slug: project-23
-    title: "Project 23 — May 2021"
+    category: "Furniture"
+    title: "Project 23"
     year: 2021
     summary: ""
     wood: ""
@@ -246,7 +262,8 @@ projects:
         caption: "Tool Drawer"
 
   - slug: project-22
-    title: "Project 22 — May 2021"
+    category: "Furniture"
+    title: "Project 22"
     year: 2021
     summary: ""
     wood: ""
@@ -259,7 +276,8 @@ projects:
         caption: "Stool"
 
   - slug: project-21
-    title: "Project 21 — May 2021"
+    category: ""
+    title: "Project 21"
     year: 2021
     summary: ""
     wood: ""
@@ -270,7 +288,8 @@ projects:
     media: []
 
   - slug: project-20
-    title: "Project 20 — May 2021"
+    category: "Small pieces"
+    title: "Project 20"
     year: 2021
     summary: ""
     wood: ""
@@ -283,7 +302,8 @@ projects:
         caption: "Wine stand"
 
   - slug: project-19
-    title: "Project 19 — April 2021"
+    category: "Furniture"
+    title: "Project 19"
     year: 2021
     summary: ""
     wood: ""
@@ -296,7 +316,8 @@ projects:
         caption: "Night stand"
 
   - slug: project-18
-    title: "Project 18 — April 2021"
+    category: "Small pieces"
+    title: "Project 18"
     year: 2021
     summary: ""
     wood: ""
@@ -311,7 +332,8 @@ projects:
         caption: "Toolbox"
 
   - slug: project-17
-    title: "Project 17 — April 2021"
+    category: "Outdoor"
+    title: "Project 17"
     year: 2021
     summary: ""
     wood: ""
@@ -326,7 +348,8 @@ projects:
         caption: ""
 
   - slug: project-16
-    title: "Project 16 — April 2021"
+    category: "Decor & gifts"
+    title: "Project 16"
     year: 2021
     summary: ""
     wood: ""
@@ -341,7 +364,8 @@ projects:
         caption: "Decorative"
 
   - slug: project-15
-    title: "Project 15 — April 2021"
+    category: "Small pieces"
+    title: "Project 15"
     year: 2021
     summary: ""
     wood: ""
@@ -356,7 +380,8 @@ projects:
         caption: ""
 
   - slug: project-14
-    title: "Project 14 — April 2021"
+    category: "Furniture"
+    title: "Project 14"
     year: 2021
     summary: ""
     wood: ""
@@ -369,7 +394,8 @@ projects:
         caption: "Book shelf"
 
   - slug: project-13
-    title: "Project 13 — April 2021"
+    category: "Decor & gifts"
+    title: "Project 13"
     year: 2021
     summary: ""
     wood: ""
@@ -388,7 +414,8 @@ projects:
         caption: ""
 
   - slug: project-12
-    title: "Project 12 — April 2021"
+    category: ""
+    title: "Project 12"
     year: 2021
     summary: ""
     wood: ""
@@ -399,7 +426,8 @@ projects:
     media: []
 
   - slug: project-11
-    title: "Project 11 — February 2021"
+    category: "Small pieces"
+    title: "Project 11"
     year: 2021
     summary: ""
     wood: ""
@@ -414,7 +442,8 @@ projects:
         caption: ""
 
   - slug: project-10
-    title: "Project 10 — January 2021"
+    category: "Furniture"
+    title: "Project 10"
     year: 2021
     summary: ""
     wood: ""
@@ -431,7 +460,8 @@ projects:
         caption: ""
 
   - slug: project-09
-    title: "Project 9 — January 2021"
+    category: "Small pieces"
+    title: "Project 9"
     year: 2021
     summary: ""
     wood: ""
@@ -448,7 +478,8 @@ projects:
         caption: ""
 
   - slug: project-08
-    title: "Project 8 — January 2021"
+    category: "Small pieces"
+    title: "Project 8"
     year: 2021
     summary: ""
     wood: ""
@@ -463,7 +494,8 @@ projects:
         caption: ""
 
   - slug: project-07
-    title: "Project 7 — December 2020"
+    category: "Outdoor"
+    title: "Project 7"
     year: 2020
     summary: ""
     wood: ""
@@ -478,7 +510,8 @@ projects:
         caption: ""
 
   - slug: project-06
-    title: "Project 6 — December 2020"
+    category: "Outdoor"
+    title: "Project 6"
     year: 2020
     summary: ""
     wood: ""
@@ -497,7 +530,8 @@ projects:
         caption: ""
 
   - slug: project-05
-    title: "Project 5 — December 2020"
+    category: "Furniture"
+    title: "Project 5"
     year: 2020
     summary: ""
     wood: ""
@@ -512,7 +546,8 @@ projects:
         caption: ""
 
   - slug: project-04
-    title: "Project 4 — December 2020"
+    category: "Furniture"
+    title: "Project 4"
     year: 2020
     summary: ""
     wood: ""
@@ -529,7 +564,8 @@ projects:
         caption: "Coffee Table"
 
   - slug: project-03
-    title: "Project 3 — December 2020"
+    category: "Furniture"
+    title: "Project 3"
     year: 2020
     summary: ""
     wood: ""
@@ -544,7 +580,8 @@ projects:
         caption: "Bench"
 
   - slug: project-02
-    title: "Project 2 — December 2020"
+    category: "Furniture"
+    title: "Project 2"
     year: 2020
     summary: ""
     wood: ""
@@ -559,7 +596,8 @@ projects:
         caption: ""
 
   - slug: project-01
-    title: "Project 1 — December 2020"
+    category: "Furniture"
+    title: "Project 1"
     year: 2020
     summary: ""
     wood: ""

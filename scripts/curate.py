@@ -34,9 +34,9 @@ DATA = ROOT / "data"
 MEDIA = ROOT / "media" / "derived"
 PORT = 8765
 
-TEXT_FIELDS = ("summary", "wood", "finish", "dimensions", "build_notes")
+TEXT_FIELDS = ("category", "summary", "wood", "finish", "dimensions", "build_notes")
 SITE_FIELDS = ("name", "tagline", "site_url", "hero", "hero_alt", "about_title", "about",
-               "about_image", "about_image_caption", "gallery_intro")
+               "about_image", "about_image_caption", "gallery_intro", "footer")
 
 
 # --------------------------------------------------------------------------- load
@@ -178,7 +178,8 @@ def save_state(payload: dict) -> dict:
            yblock("about", site.get("about") or "", ""),
            f"about_image: {ystr(about_img)}{('   # ' + inv[about_img]['path']) if about_img in inv else ''}\n",
            f"about_image_caption: {ystr(site.get('about_image_caption') or '')}\n\n",
-           f"gallery_intro: {ystr(site.get('gallery_intro') or '')}\n"]
+           f"gallery_intro: {ystr(site.get('gallery_intro') or '')}\n",
+           f"footer: {ystr(site.get('footer') or '')}\n"]
     (DATA / "site.yaml").write_text("".join(out))
 
     return {"ok": True, "shown": len(seen), "hidden": len(hidden), "projects": len(projects)}
@@ -220,7 +221,7 @@ section.loose{background:#f6f2ea;border-style:dashed}
 section.dragover{outline:2px dashed #8a6a52;outline-offset:-2px}
 .phead{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:0 0 8px}
 .phead .title{flex:1 1 16em;font-size:15px;font-weight:600}
-.phead .year{width:5.5em}
+.phead .cat{width:11em}
 .phead .meta{color:#9a9086;font-size:12px;white-space:nowrap}
 .phead .tools{display:flex;gap:4px;margin-left:auto}
 details{margin:0 0 8px}
@@ -316,7 +317,8 @@ function field(label, key, val, wide, multi){
 
 function render(){
   const main = document.getElementById("main");
-  let html = `<section class="site"><details open><summary><b>Site settings</b> — name, tagline, landing hero, about page</summary>
+  const catList = [...new Set(projects.map(p => (p.category || "").trim()).filter(Boolean))];
+  let html = `<datalist id="cats">${catList.map(c => `<option value="${esc(c)}">`).join("")}</datalist><section class="site"><details open><summary><b>Site settings</b> — name, tagline, landing hero, about page</summary>
     <div class="fields" data-site>
       ${field("Your name (header, landing page, footer)", "name", site.name)}
       ${field("Tagline (one line under your name)", "tagline", site.tagline)}
@@ -326,6 +328,7 @@ function render(){
       <label class="f"><span>About page image</span><select data-k="about_image">${photoOptions(site.about_image)}</select></label>
       ${field("About image caption", "about_image_caption", site.about_image_caption)}
       ${field("Gallery intro line", "gallery_intro", site.gallery_intro)}
+      ${field("Footer line", "footer", site.footer)}
     </div></details></section>`;
 
   projects.forEach((p, idx) => {
@@ -334,7 +337,7 @@ function render(){
     html += `<section data-slug="${p.slug}">
       <div class="phead">
         <input type="text" class="title" value="${esc(p.title)}" placeholder="Project title">
-        <input type="text" class="year" value="${esc(p.year)}" placeholder="Year">
+        <input type="text" class="cat" list="cats" value="${esc(p.category)}" placeholder="Category" title="Gallery filter group">
         <span class="meta">${p.slug} · ${shown} of ${p.media.length} shown · <a href="http://127.0.0.1:8000/projects/${p.slug}.html" target="_blank">page</a></span>
         <span class="tools">
           <button class="quiet up" ${idx===0?"disabled":""} title="Move project up">↑</button>
@@ -372,7 +375,7 @@ document.getElementById("main").addEventListener("input", e => {
   if (sec) {
     const p = projects.find(p => p.slug === sec.dataset.slug);
     if (t.classList.contains("title")) { p.title = t.value; dirty(); return; }
-    if (t.classList.contains("year")) { p.year = t.value; dirty(); return; }
+    if (t.classList.contains("cat")) { p.category = t.value; dirty(); return; }
     if (t.dataset.k) { p[t.dataset.k] = t.value; dirty(); return; }
   }
   if (t.closest("[data-site]") && t.dataset.k) { site[t.dataset.k] = t.value; dirty(); }
@@ -409,7 +412,7 @@ document.getElementById("main").addEventListener("click", e => {
 document.getElementById("newProject").onclick = () => {
   let k = projects.length + 1, slug = `project-${String(k).padStart(2,"0")}`;
   while (projects.some(p => p.slug === slug)) { k++; slug = `project-${String(k).padStart(2,"0")}`; }
-  projects.unshift({slug, title: `New project ${k}`, year: "", cover: "", summary:"", wood:"", finish:"", dimensions:"", build_notes:"", media: []});
+  projects.unshift({slug, title: `New project ${k}`, year: "", category: "", cover: "", summary:"", wood:"", finish:"", dimensions:"", build_notes:"", media: []});
   dirty(); render(); window.scrollTo(0, 0);
   const t = document.querySelector(`section[data-slug="${slug}"] .title`); if (t) { t.focus(); t.select(); }
 };
