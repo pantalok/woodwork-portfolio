@@ -1,6 +1,6 @@
 # Media not shown on the site. Nothing here is deleted.
 # `suggested` is the project the file sits in (greyed out) inside scripts/curate.py.
-# Last written by scripts/curate.py on 2026-11-14 17:37.
+# Last written by scripts/curate.py on 2026-11-14 18:05.
 
 unassigned:
   - id: 58622f9b395f
@@ -39,6 +39,12 @@ unassigned:
     kind: photo
     suggested: project-07
     reason: "shows a person — decide whether it belongs on a public site"
+  - id: 33ea00fd64f7
+    file: "Bench1.MOV"
+    date: 2021-01-04
+    kind: video
+    suggested: project-07
+    reason: "removed by owner"
   - id: acd13075b2ea
     file: "Workshop bench.MOV"
     date: 2021-01-10

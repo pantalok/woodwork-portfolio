@@ -1,14 +1,14 @@
 # Project curation. Order here is display order.
 # Edit with scripts/curate.py or by hand. build_notes accepts simple markdown.
 # A media item is {id, caption}. Comments show the original filename and capture date.
-# Last written by scripts/curate.py on 2026-11-14 17:37.
+# Last written by scripts/curate.py on 2026-11-14 18:05.
 
 projects:
 
   - slug: project-38
-    category: "Furniture"
     title: "Project 38"
     year: 2024
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -20,9 +20,9 @@ projects:
         caption: "Folding Coffee Table"
 
   - slug: project-37
-    category: "Outdoor"
     title: "Project 37"
     year: 2023
+    category: "Outdoor"
     summary: ""
     wood: ""
     finish: ""
@@ -38,9 +38,9 @@ projects:
         caption: "Planter"
 
   - slug: project-36
-    category: "Furniture"
     title: "Project 36"
     year: 2022
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -54,9 +54,9 @@ projects:
         caption: ""
 
   - slug: project-35
-    category: "Small pieces"
     title: "Project 35"
     year: 2022
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -72,9 +72,9 @@ projects:
         caption: ""
 
   - slug: project-34
-    category: "Outdoor"
     title: "Project 34"
     year: 2022
+    category: "Outdoor"
     summary: ""
     wood: ""
     finish: ""
@@ -88,9 +88,9 @@ projects:
         caption: "Chair"
 
   - slug: project-33
-    category: "Furniture"
     title: "Project 33"
     year: 2022
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -102,9 +102,9 @@ projects:
         caption: ""
 
   - slug: project-32
-    category: "Small pieces"
     title: "Project 32"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -120,9 +120,9 @@ projects:
         caption: ""
 
   - slug: project-31
-    category: "Furniture"
     title: "Project 31"
     year: 2021
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -134,9 +134,9 @@ projects:
         caption: "Study Table"
 
   - slug: project-30
-    category: "Small pieces"
     title: "Project 30"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -148,9 +148,9 @@ projects:
         caption: "Cake stand"
 
   - slug: project-29
-    category: "Decor & gifts"
     title: "Project 29"
     year: 2021
+    category: "Decor & gifts"
     summary: ""
     wood: ""
     finish: ""
@@ -170,9 +170,9 @@ projects:
         caption: ""
 
   - slug: project-28
-    category: ""
     title: "Project 28"
     year: 2021
+    category: ""
     summary: ""
     wood: ""
     finish: ""
@@ -182,9 +182,9 @@ projects:
     media: []
 
   - slug: project-27
-    category: "Decor & gifts"
     title: "Project 27"
     year: 2021
+    category: "Decor & gifts"
     summary: ""
     wood: ""
     finish: ""
@@ -202,9 +202,9 @@ projects:
         caption: ""
 
   - slug: project-26
-    category: "Small pieces"
     title: "Project 26"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -222,9 +222,9 @@ projects:
         caption: ""
 
   - slug: project-25
-    category: ""
     title: "Project 25"
     year: 2021
+    category: ""
     summary: ""
     wood: ""
     finish: ""
@@ -234,9 +234,9 @@ projects:
     media: []
 
   - slug: project-24
-    category: "Decor & gifts"
     title: "Project 24"
     year: 2021
+    category: "Decor & gifts"
     summary: ""
     wood: ""
     finish: ""
@@ -248,9 +248,9 @@ projects:
         caption: "Frame"
 
   - slug: project-23
-    category: "Furniture"
     title: "Project 23"
     year: 2021
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -262,9 +262,9 @@ projects:
         caption: "Tool Drawer"
 
   - slug: project-22
-    category: "Furniture"
     title: "Project 22"
     year: 2021
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -276,9 +276,9 @@ projects:
         caption: "Stool"
 
   - slug: project-21
-    category: ""
     title: "Project 21"
     year: 2021
+    category: ""
     summary: ""
     wood: ""
     finish: ""
@@ -288,9 +288,9 @@ projects:
     media: []
 
   - slug: project-20
-    category: "Small pieces"
     title: "Project 20"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -302,9 +302,9 @@ projects:
         caption: "Wine stand"
 
   - slug: project-19
-    category: "Furniture"
     title: "Project 19"
     year: 2021
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -316,9 +316,9 @@ projects:
         caption: "Night stand"
 
   - slug: project-18
-    category: "Small pieces"
     title: "Project 18"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -332,9 +332,9 @@ projects:
         caption: "Toolbox"
 
   - slug: project-17
-    category: "Outdoor"
     title: "Project 17"
     year: 2021
+    category: "Outdoor"
     summary: ""
     wood: ""
     finish: ""
@@ -348,9 +348,9 @@ projects:
         caption: ""
 
   - slug: project-16
-    category: "Decor & gifts"
     title: "Project 16"
     year: 2021
+    category: "Decor & gifts"
     summary: ""
     wood: ""
     finish: ""
@@ -364,9 +364,9 @@ projects:
         caption: "Decorative"
 
   - slug: project-15
-    category: "Small pieces"
     title: "Project 15"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -380,9 +380,9 @@ projects:
         caption: ""
 
   - slug: project-14
-    category: "Furniture"
     title: "Project 14"
     year: 2021
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -394,9 +394,9 @@ projects:
         caption: "Book shelf"
 
   - slug: project-13
-    category: "Decor & gifts"
     title: "Project 13"
     year: 2021
+    category: "Decor & gifts"
     summary: ""
     wood: ""
     finish: ""
@@ -414,9 +414,9 @@ projects:
         caption: ""
 
   - slug: project-12
-    category: ""
     title: "Project 12"
     year: 2021
+    category: ""
     summary: ""
     wood: ""
     finish: ""
@@ -426,9 +426,9 @@ projects:
     media: []
 
   - slug: project-11
-    category: "Small pieces"
     title: "Project 11"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -442,9 +442,9 @@ projects:
         caption: ""
 
   - slug: project-10
-    category: "Furniture"
     title: "Project 10"
     year: 2021
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -460,9 +460,9 @@ projects:
         caption: ""
 
   - slug: project-09
-    category: "Small pieces"
     title: "Project 9"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -478,9 +478,9 @@ projects:
         caption: ""
 
   - slug: project-08
-    category: "Small pieces"
     title: "Project 8"
     year: 2021
+    category: "Small pieces"
     summary: ""
     wood: ""
     finish: ""
@@ -494,9 +494,9 @@ projects:
         caption: ""
 
   - slug: project-07
-    category: "Outdoor"
     title: "Project 7"
     year: 2020
+    category: "Outdoor"
     summary: ""
     wood: ""
     finish: ""
@@ -506,13 +506,11 @@ projects:
     media:
       - id: 70adf7bf7f04   # Bench1.jpg  2021-01-04  photo
         caption: ""
-      - id: 33ea00fd64f7   # Bench1.MOV  2021-01-04  video
-        caption: ""
 
   - slug: project-06
-    category: "Outdoor"
     title: "Project 6"
     year: 2020
+    category: "Outdoor"
     summary: ""
     wood: ""
     finish: ""
@@ -530,9 +528,9 @@ projects:
         caption: ""
 
   - slug: project-05
-    category: "Furniture"
     title: "Project 5"
     year: 2020
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -546,9 +544,9 @@ projects:
         caption: ""
 
   - slug: project-04
-    category: "Furniture"
     title: "Project 4"
     year: 2020
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -564,9 +562,9 @@ projects:
         caption: "Coffee Table"
 
   - slug: project-03
-    category: "Furniture"
     title: "Project 3"
     year: 2020
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -580,9 +578,9 @@ projects:
         caption: "Bench"
 
   - slug: project-02
-    category: "Furniture"
     title: "Project 2"
     year: 2020
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
@@ -596,9 +594,9 @@ projects:
         caption: ""
 
   - slug: project-01
-    category: "Furniture"
     title: "Project 1"
     year: 2020
+    category: "Furniture"
     summary: ""
     wood: ""
     finish: ""
